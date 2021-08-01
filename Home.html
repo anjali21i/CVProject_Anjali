@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CV Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+        <link rel="stylesheet" href="HomeStyle.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <script>
+            window.onload = function exampleFunction() {
+                var flag = true;
+                var email2 = localStorage.getItem("email1");
+                var pswrd2 = localStorage.getItem("pswrd1");
+                console.log(email2);
+                if(email2 == null){
+                    window.location.href="index.html";
+                    flag = false;
+                }
+            }
+        </script>
+    
+    </head>
+    <body>
+        <div class="nav-des">
+            <ul class="topnav">
+                <li class="homenav"><a class="active" href="#home">
+                    <i class="iconify" data-icon="simple-icons:homebridge" data-inline="false"></i>
+                    Home</a>
+                </li>
+                
+                <li class="right"><a onclick="logout()">
+                    <script>
+                        
+                    </script></a>
+                </li>
+                <li class="right"><a onclick="logout()">
+                    <i class="iconify" data-icon="uil:signout" data-inline="false"></i>
+                    Logout</a>
+                </li>
+            </ul>
+        </div>
+         <!-- end #nav -->
+    
+        <div id="effect_ripple">
+            <main class="main-content">
+                <section class="left-section">
+                    <div class="left-content">
+                        <div class="profile">
+                            <div class="image">
+                                <img src="./image/imgmine.jpg" alt="">
+                            </div>
+                            <h2 class="name">Anjali Gupta</h2>
+                        </div>
+                        <div class="contact-info">
+                            <h3 class="main-title">Contact Info</h3>
+                            <ul>
+                                <li>
+                                    <i class="fa fa-phone"></i>
+                                    9169123474, 8299534407
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope"></i>
+                                    anjaliguptajnp21@gmail.com
+                                </li>
+                                <li>
+                                    <i class="fa fa-facebook"></i>
+                                    www.facebook.com/anj
+                                </li>
+                                <li>
+                                    <i class="fa fa-linkedin"></i>
+                                    /anjali-gupta-21070721
+                                </li>
+                                <li>
+                                    <i class="fa fa-map-marker"></i>
+                                    India
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="skills-section">
+                            <h3 class="main-title">Skills</h3>
+                            <ul>
+                                <li>
+                                    <p class="skill-title">HTML & CSS</p>
+                                    <div  class="progress-bar">
+                                        <div data-percent="78" class="progress_b">
+                                            <span class="tooltip">78%</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="skill-title">Bootstrap</p>
+                                    <div  class="progress-bar">
+                                        <div data-percent="60" class="progress_b">
+                                            <span class="tooltip">60%</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="skill-title">Javascript</p>
+                                    <div  class="progress-bar">
+                                        <div data-percent="60" class="progress_b">
+                                            <span class="tooltip">60%</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="skill-title">C-lang</p>
+                                    <div  class="progress-bar">
+                                        <div data-percent="80"class="progress_b">
+                                            <span class="tooltip">80%</span>    
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="skill-title">Java</p>
+                                    <div  class="progress-bar">
+                                        <div data-percent="78" class="progress_b">
+                                            <span class="tooltip">70%</span>
+                                        </div>
+                                    </div>
+                                    </li>
+                                    <li>
+                                        <p class="skill-title">MySQL & Oracle</p>
+                                        <div  class="progress-bar">
+                                            <div data-percent="70" class="progress_b">
+                                                <span class="tooltip">70%</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="skill-title">Data-Structures</p>
+                                        <div class="progress-bar">
+                                            <div data-percent="68" class="progress_b">
+                                                <span class="tooltip">68%</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="references-section">
+                                <h3 class="main-title">Projects</h3>
+                                <div class="referee">
+                                    <h6 class="sub-title">Online Attendance Management System</h6>
+                                    <p class="sub-para">Java(JSP, Servlet), MySQL, Bootstrap, Javascript</p>
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-file"></i>
+                                            2019(college major project)
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="referee">
+                                    <h6 class="sub-title">Home automation System</h6>
+                                    <p class="sub-para">C, Arduino, Node Mcu</p>
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-file"></i>
+                                            2018(college workshop)
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="referee">
+                                    <h6 class="sub-title">Responsive CV </h6>
+                                    <p class="sub-para">Html, CSS, Javascript & bootstrap</p>
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-file"></i>
+                                            mini Project
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><div class="references-section">
+                                <h3 class="main-title">Interest</h3>
+                                <div class="referee">
+                                    <ul>
+                                        <li>
+    
+                                            <h6 class="sub-titl"><i class="fa fa-search"></i>
+                                                Exploring
+                                            </h6>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="referee">
+                                    <ul>
+                                        <li><h6 class="sub-titl"><i class="fa fa-plane"></i>
+                                                Travel
+                                            </h6>                                 
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="referee">
+                                    <ul>
+                                        <li>
+                                            <h6 class="sub-titl"><i class="fa fa-gamepad"></i>
+                                                Badminton
+                                                
+                                            </h6>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="right-section">
+                        <div class="right-main-content">
+                            <section class="about sect">
+                                <h2 class="right-title">Career Objective:</h2>
+                                <p class="para">
+                                    Aiming to work in a growth-oriented organization where I can use my knowledge, 
+                                    enhance and utilize my skills, experiences as well as to acquire a challenging position 
+                                    where I can prove my capabilities in order to achieve organizational as well as my goals.
+                                    <br>
+                                </p>
+                            </section>
+                            <section class="education sect">
+                                <h2 class="right-title">education</h2>
+                                <div class="timeline">
+                                    <div class="left-tl-content">
+                                        <h5 class="tl-title">Bachelors of Technology</h5>
+                                        <p class="para">2015 - 2019</p>
+                                    </div>
+                                    <div class="right-tl-content">
+                                        <div class="tl-content">
+                                            <h5 class="tl-title-2">Percentage: 78%</h5>
+                                            <p class="para">
+                                                Uma Nath Singh Institute of Engineering & Technology<br/>
+                                                Veer Bahadur Singh Purvanchal University
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="timeline">
+                                    <div class="left-tl-content">
+                                        <h5 class="tl-title">Intermediate</h5>
+                                        <p class="para">2014 - 2015</p>
+                                    </div>
+                                    <div class="right-tl-content">
+                                        <div class="tl-content">
+                                            <h5 class="tl-title-2">Percentage: 78%</h5>
+                                            <p class="para">
+                                                CBSE<br/>
+                                                Dr. Rizvi Learners' Academy
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="timeline">
+                                    <div class="left-tl-content">
+                                        <h5 class="tl-title">Matriculation</h5>
+                                        <p class="para">2012 - 2013</p>
+                                    </div>
+                                    <div class="right-tl-content">
+                                        <div class="tl-content">
+                                            <h5 class="tl-title-2">CGPA 10</h5>
+                                            <p class="para">
+                                                CBSE<br/>
+                                                Dr. Rizvi Learners' Academy
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="experince sect">
+                                <h2 class="right-title">Training & Internship</h2>
+                                <div class="timeline">
+                                    <div class="left-tl-content">
+                                        <h5 class="tl-title">MERN Full Stack web development</h5>
+                                        <p class="para">2021 - Present</p>
+                                    </div>
+                                    <div class="right-tl-content">
+                                        <div class="tl-content">
+                                            <h5 class="tl-title-2">Newton School</h5>
+                                            <p class="para">
+                                               6 month training on front end using react , node mongoDB, Express as well as on data structure using java
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="timeline">
+                                    <div class="left-tl-content">
+                                        <h5 class="tl-title">Java Training</h5>
+                                        <p class="para">2019-2020</p>
+                                    </div>
+                                <div class="right-tl-content">
+                                    <div class="tl-content">
+                                        <h5 class="tl-title-2">Naresh i Technology, Hyderabad</h5>
+                                        <p class="para">
+                                            J2SE, J2EE with Oracle database
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline">
+                                <div class="left-tl-content">
+                                    <h5 class="tl-title">Java Internship</h5>
+                                    <p class="para">2018</p>
+                                </div>
+                                <div class="right-tl-content">
+                                    <div class="tl-content">
+                                        <h5 class="tl-title-2">Pie Infocom, Lucknow</h5>
+                                        <p class="para">
+                                            College based internship
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline">
+                                <div class="left-tl-content">
+                                    <h5 class="tl-title">Python & IoT workshop</h5>
+                                    <p class="para">2018</p>
+                                </div>
+                                <div class="right-tl-content">
+                                    <div class="tl-content">
+                                        <h5 class="tl-title-2">Sofcon India Pvt Ltd, Lucknow</h5>
+                                        <p class="para">
+                                            1 week workshop organised by college
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="awards sect">
+                            <h2 class="right-title">Awards & Certificates</h2>
+                            <div class="timeline">
+                                <div class="left-tl-content">
+                                    <h5 class="tl-title">Engineers Day, TEQIP-III</h5>
+                                    <p class="para">Sep 2018</p>
+                                </div>
+                                <div class="right-tl-content">
+                                    <div class="tl-content">
+                                        <h5 class="tl-title-2">1st & 2nd Prize in Poster Competition</h5>
+                                        <p class="para">
+                                            Awarded with 2nd Prize on “Engineer’s Day-2018” under the Aegis of TEQIP-III.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline">
+                                <div class="left-tl-content">
+                                    <h5 class="tl-title">National Science Day, TEQIP-III</h5>
+                                    <p class="para">Feb 2018</p>
+                                </div>
+                                <div class="right-tl-content">
+                                    <div class="tl-content">
+                                        <h5 class="tl-title-2">2nd Prize in Poster Competition</h5>
+                                        <p class="para">
+                                            Awarded with 2nd Prize on “National Science Day”, 
+                                            under the Aegis of TEQIP-III.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline">
+                                <div class="left-tl-content">
+                                    <h5 class="tl-title">SHAFT 2k17</h5>
+                                    <p class="para">Feb 2017</p>
+                                </div>
+                                <div class="right-tl-content">
+                                    <div class="tl-content">
+                                        <h5 class="tl-title-2">2nd Prize in Badminton & Painting Competition </h5>
+                                        <p class="para">
+                                            Awarded with 2nd Prize in college fest.
+                                        </p>
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <div class="timeline">
+                                <div class="left-tl-content">
+                                    <h5 class="tl-title">Aviator 2016</h5>
+                                    <p class="para">Jan 2016</p>
+                                </div>
+                                <div class="right-tl-content">
+                                    <div class="tl-content">
+                                        <h5 class="tl-title-2">2nd Prize in Painting Competition </h5>
+                                        <p class="para">
+                                            Awarded with 2nd Prize in college fest.
+                                        </p>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="timeline">
+                                <div class="left-tl-content">
+                                    <h5 class="tl-title">Business opportunity guidance<br> & Project Preparation </h5>
+                                    <p class="para">Oct 2017</p>
+                                </div>
+                                <div class="right-tl-content">
+                                    <div class="tl-content">
+                                        <h5 class="tl-title-2">Institute of 
+                                            Entrepreneurship Development, 
+                                            Lucknow-UP</h5>
+                                        <p class="para">
+                                            Entrepreneurship development program 
+                                            on business opportunity 
+                                            guidance & project preparation
+                                        </p>
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <div class="timeline">
+                                <div class="left-tl-content">
+                                    <h5 class="tl-title">Embedded & solar power system Employability Concerns </h5>
+                                    <p class="para">Dec 2017</p>
+                                </div>
+                                <div class="right-tl-content">
+                                    <div class="tl-content">
+                                        <h5 class="tl-title-2">TEQIP-III</h5>
+                                        <p class="para">
+                                            workshop
+                                        </p>
+                                    </div>
+                                </div>
+    
+                            </div>
+    
+                        </section>
+                    </div>
+                </section>
+            </main>
+        </div>
+       <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+       <script src="script.js"></script>
+    </body>
+</html>

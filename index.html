@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>LOG REG page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-box">
+               <div class="button-box">
+                   <div id="tbtn"></div>
+                   <button type="button"class="toggle-btn" onclick="togglelogin()" >
+                        Log in
+                    </button>
+                   <button type="button"class="toggle-btn" onclick="togglesignup()">
+                        Sign up
+                    </button>
+               </div> 
+               <div class="social-icons">
+                    <i class="iconify" data-icon="uil:facebook" data-inline="false" style="color: #4267B2;"></i>
+                    <i class="iconify" data-icon="uil:instagram" data-inline="false" style="  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);"></i>
+                    <i class="iconify" data-icon="uil:google" data-inline="false" style="color:#4285F4"></i>
+                    <!--<a href="CVpage.html" class="btn btn-primary btn-lg" title="Facebook"></a>
+                        -->
+                </div>
+                <form id="ulogin" class="input-group">
+                    Enter Email:
+                    <input type="email" id="email" class="form-control input-field"  name="email" placeholder="Email address"  pattern="^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?" required="required">
+                    Enter Password:
+                    <input type="password" id="pswrd" class="form-control input-field" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}" required="required">
+                    <br/>
+                    <button type="button" onclick="login()" class="btn-primary form-control submit-btn">Log in</button>
+                </form>
+                <form id="usignup" class="input-group">
+                    Enter Name:
+                    <input type="text" id="fullname" class="form-control input-field" name="fullname"   placeholder="Full Name" required="required">
+                    Enter Mobile:
+                    <input type="text" id="mobile" class="form-control input-field " name="mobile"   placeholder="Mobile" pattern="[6789][0-9]{9}" required="required">
+                    Enter Birth Date:
+                    <input type="date" id="dob" class="form-control input-field" name="birth" placeholder="Date of Birth" required="required">
+                    Enter Address:
+                    <input type="text" id="addr" class="form-control input-field" name="username" placeholder="Address" required="required">
+                    Enter Email:
+                    <input type="email" id="emails" class="form-control input-field"  name="email" placeholder="Email address"  pattern="^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?" required="required">
+                    Enter Password:
+                    <input type="password" id="pswrds" class="form-control input-field" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}" required="required">
+                    <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+                    <br/>
+                    <button type="button" onclick="signup()" class=" btn-primary form-control submit-btn">Sign up</button>
+                </form>
+            </div>
+        </div>
+        
+        <script>
+            var x= document.getElementById("ulogin");
+            var y= document.getElementById("usignup");
+            var z= document.getElementById("tbtn");
+
+            function togglesignup(){
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "110px";
+            }
+            function togglelogin(){
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0";
+            }
+        </script>
+        <script src="script.js" async defer></script>
+    </body>
+</html>
